@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Are My Sites Up?</title>
+  <style type="text/css">
+    body {
+      font-family: Futura;
+    }
+    .container {
+    }
+    .down {
+      color: red;
+    }
+    .up {
+      color: green;
+    }
+    h4 {
+      width: 350px;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <meta http-equiv="refresh" content="30" />
+</head>
+<body>
+  <div class="container">
+    <h1>Are My Sites Up?</h1>
+    {% if down.length %}
+      <div class="down">
+        <h2>DOWN</h2>
+        {% for site in down %}
+          <h4>{{ site.title }}</h4>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="up">
+      <h2>UP</h2>
+      {% for site in up %}
+        <h4>{{ site.title }}</h4>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

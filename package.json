@@ -1,0 +1,27 @@
+{
+  "name": "sitesup-monitor",
+  "version": "0.1.0",
+  "description": "Displays an RSS feed from aremysitesup.com without the need to log in",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/sitesup-monitor"
+  },
+  "keywords": [
+    "aremysitesup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/punkave/sitesup-monitor/issues"
+  },
+  "homepage": "https://github.com/punkave/sitesup-monitor",
+  "dependencies": {
+    "feedparser": "^0.16.6",
+    "request": "^2.34.0",
+    "nunjucks": "^1.0.5"
+  }
+}
